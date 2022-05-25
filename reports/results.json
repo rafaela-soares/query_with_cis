@@ -18,8 +18,8 @@
 	},
 	"total_counter": 10,
 	"total_bom_resources": 0,
-	"start": "2022-05-25T10:37:12.885611411Z",
-	"end": "2022-05-25T10:37:13.061348779Z",
+	"start": "2022-05-25T10:38:04.365521549Z",
+	"end": "2022-05-25T10:38:04.532543645Z",
 	"paths": [
 		"./query_with_cis/s3_bucket_without_enabled_mfa_delete"
 	],
@@ -36,41 +36,8 @@
 			"description_id": "e1699d08",
 			"files": [
 				{
-					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
-					"similarity_id": "55eb11386b28bb1a570d6922c3e524911daf11ad18a6bc637cf327ffbad03f1c",
-					"line": 12,
-					"issue_type": "IncorrectValue",
-					"search_key": "aws_s3_bucket[positive3].versioning.enabled",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'enabled' is set to true",
-					"actual_value": "'enabled' is set to false"
-				},
-				{
-					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
-					"similarity_id": "03b56a133dede6a5e01e9b6996e9846937928e2250ed4e94a8ba8c33f4ee4842",
-					"line": 11,
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[positive3].versioning",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'mfa_delete' is set to true",
-					"actual_value": "'mfa_delete' is undefined or null"
-				},
-				{
-					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive2.tf",
-					"similarity_id": "dbf20591ddd6df15e2f769490306b557258520210d91a269e2fb5071a8217759",
-					"line": 11,
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[positive2].versioning",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'mfa_delete' is set to true",
-					"actual_value": "'mfa_delete' is undefined or null"
-				},
-				{
-					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
-					"similarity_id": "19eccae7f227affd662d37d2bfa1f98c801a94af20a5094d6e936d3ae5f4f59e",
+					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
+					"similarity_id": "85ba7ddbaa1c5c4ec6f76bbc372a23446642bd8e39f820de57120d5859188730",
 					"line": 8,
 					"issue_type": "MissingAttribute",
 					"search_key": "module[s3_bucket].versioning",
@@ -91,15 +58,26 @@
 					"actual_value": "'mfa_delete' is set to false"
 				},
 				{
-					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
-					"similarity_id": "85ba7ddbaa1c5c4ec6f76bbc372a23446642bd8e39f820de57120d5859188730",
-					"line": 8,
+					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
+					"similarity_id": "03b56a133dede6a5e01e9b6996e9846937928e2250ed4e94a8ba8c33f4ee4842",
+					"line": 11,
 					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket].versioning",
+					"search_key": "aws_s3_bucket[positive3].versioning",
 					"search_line": 0,
 					"search_value": "",
 					"expected_value": "'mfa_delete' is set to true",
 					"actual_value": "'mfa_delete' is undefined or null"
+				},
+				{
+					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
+					"similarity_id": "ad329fdd79ef65dfd2e6487fe77abc3aa5894533b69aa946191912633a26e1cd",
+					"line": 1,
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'versioning' is defined and not null",
+					"actual_value": "'versioning' is undefined or null"
 				},
 				{
 					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive1.tf",
@@ -113,17 +91,6 @@
 					"actual_value": "aws_s3_bucket[positive1].versioning is undefined or null"
 				},
 				{
-					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive3.tf",
-					"similarity_id": "639930af197f644f7f8291cb74b7e5f6c6841972d566399dd2173d1b1780b527",
-					"line": 13,
-					"issue_type": "IncorrectValue",
-					"search_key": "aws_s3_bucket[positive3].versioning.mfa_delete",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'mfa_delete' is set to true",
-					"actual_value": "'mfa_delete' is set to false"
-				},
-				{
 					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
 					"similarity_id": "94a6d3185e1aed40cde689886568d98fbb8bb730c402b8aaeefb81352f9bb3e5",
 					"line": 9,
@@ -135,15 +102,48 @@
 					"actual_value": "'enabled' is set to false"
 				},
 				{
-					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
-					"similarity_id": "ad329fdd79ef65dfd2e6487fe77abc3aa5894533b69aa946191912633a26e1cd",
-					"line": 1,
+					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
+					"similarity_id": "19eccae7f227affd662d37d2bfa1f98c801a94af20a5094d6e936d3ae5f4f59e",
+					"line": 8,
 					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
+					"search_key": "module[s3_bucket].versioning",
 					"search_line": 0,
 					"search_value": "",
-					"expected_value": "'versioning' is defined and not null",
-					"actual_value": "'versioning' is undefined or null"
+					"expected_value": "'mfa_delete' is set to true",
+					"actual_value": "'mfa_delete' is undefined or null"
+				},
+				{
+					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
+					"similarity_id": "55eb11386b28bb1a570d6922c3e524911daf11ad18a6bc637cf327ffbad03f1c",
+					"line": 12,
+					"issue_type": "IncorrectValue",
+					"search_key": "aws_s3_bucket[positive3].versioning.enabled",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'enabled' is set to true",
+					"actual_value": "'enabled' is set to false"
+				},
+				{
+					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive2.tf",
+					"similarity_id": "dbf20591ddd6df15e2f769490306b557258520210d91a269e2fb5071a8217759",
+					"line": 11,
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[positive2].versioning",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'mfa_delete' is set to true",
+					"actual_value": "'mfa_delete' is undefined or null"
+				},
+				{
+					"file_name": "query_with_cis/s3_bucket_without_enabled_mfa_delete/test/positive3.tf",
+					"similarity_id": "639930af197f644f7f8291cb74b7e5f6c6841972d566399dd2173d1b1780b527",
+					"line": 13,
+					"issue_type": "IncorrectValue",
+					"search_key": "aws_s3_bucket[positive3].versioning.mfa_delete",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'mfa_delete' is set to true",
+					"actual_value": "'mfa_delete' is set to false"
 				}
 			]
 		}
