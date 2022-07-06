@@ -30,7 +30,7 @@ jobs:
         # Scanning two directories: ./terraform/ ./cfn-templates/ plus a single file
         path: '.'
         # Fail on HIGH and MEDIUM severity results
-        fail_on: high,medium
+        ignore_on_exit: results
         # when provided with a directory on output_path
         # it will generate the specified reports file named 'results.{extension}'
         # in this example it will generate:
